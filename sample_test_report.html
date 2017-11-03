@@ -6,7 +6,7 @@
     <meta name="generator" content="HTMLTestRunner 0.8.2"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
-<style type="text/css" media="screen">
+    <style type="text/css" media="screen">
 body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
 table       { font-size: 100%; }
 pre         { }
@@ -44,13 +44,11 @@ a.popup_link:hover {
     position: relative;
     left: 0px;
     top: 0px;
-    /*border: solid #627173 1px; */
     padding: 10px;
-    background-color: #E6E6D6;
+    background-color: #EEE;
     font-family: "Lucida Console", "Courier New", Courier, monospace;
     text-align: left;
     font-size: 8pt;
-    width: 500px;
 }
 
 }
@@ -70,16 +68,17 @@ a.popup_link:hover {
     background-color: #777;
 }
 #result_table td {
-    border: 1px solid #777;
+    border: 1px solid rgba(119, 119, 119, 0.23);
     padding: 2px;
+    vertical-align:top; 
 }
 #total_row  { font-weight: bold; }
-.passClass  { background-color: #6c6; }
-.failClass  { background-color: #c60; }
-.errorClass { background-color: #c00; }
-.passCase   { color: #6c6; }
-.failCase   { color: #c60; font-weight: bold; }
-.errorCase  { color: #c00; font-weight: bold; }
+.passClass  { background-color: #00c853; color: white;}
+.failClass  { background-color: #fa842d; color: white;}
+.errorClass { background-color: #fa2d2d; color: white;}
+.passCase   { color: #00c853; }
+.failCase   { color: #fa842d; font-weight: bold; }
+.errorCase  { color: #fa2d2d; font-weight: bold; }
 .hiddenRow  { display: none; }
 .testcase   { margin-left: 2em; }
 
@@ -239,9 +238,9 @@ function showOutput(id, name) {
         pass</a>
 
     <div id='div_pt1.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -265,9 +264,9 @@ DEBUG:app:CGI script: /___ completed duration: 0.10000000
         pass</a>
 
     <div id='div_pt1.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -291,9 +290,9 @@ DEBUG:app:CGI script: /help completed duration: 0.80000000
         pass</a>
 
     <div id='div_pt1.3' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -317,9 +316,9 @@ DEBUG:app:CGI script: /help completed duration: 0.110000000
         pass</a>
 
     <div id='div_pt1.4' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.4').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -343,9 +342,9 @@ DEBUG:app:CGI script: /help completed duration: 0.80000000
         pass</a>
 
     <div id='div_pt1.5' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.5').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -372,9 +371,9 @@ DEBUG:app:CGI script: / completed duration: 0.60000000
         pass</a>
 
     <div id='div_pt1.6' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.6').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -407,9 +406,9 @@ DEBUG:app:CGI script: /updateParent completed duration: 0.20000000
         fail</a>
 
     <div id='div_ft2.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.1').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -440,11 +439,16 @@ Traceback (most recent call last):
 AssertionError: failed:/history
   pattern missing: &lt;title&gt;
 --out-------------------------------------------------------------------
-HTTP/1.0 500 Internal Server Error
-Server: MindRetrieve 0.8.2
-Date: Mon, 28 Mar 2011 16:00:12 GMT
-Content-type: text/html
-
+HTTP/1.0 500 Internal Server Error
+
+Server: MindRetrieve 0.8.2
+
+Date: Mon, 28 Mar 2011 16:00:12 GMT
+
+Content-type: text/html
+
+
+
 &lt;html&gt;&lt;body&gt;&lt;h1&gt;Internal Error&lt;/h1&gt;
 &lt;pre&gt;
 Traceback (most recent call last):
@@ -482,9 +486,9 @@ NameError: global name 'PyLucene' is not defined
         fail</a>
 
     <div id='div_ft2.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.2').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -511,9 +515,9 @@ AssertionError
         fail</a>
 
     <div id='div_ft2.3' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.3').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -540,9 +544,9 @@ AssertionError
         fail</a>
 
     <div id='div_ft2.4' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.4').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -578,9 +582,9 @@ AssertionError
         pass</a>
 
     <div id='div_pt3.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.1').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -603,9 +607,9 @@ pt3.1: INFO:wlib.store:Loading weblib from: testdata/weblib\weblib.dat
         pass</a>
 
     <div id='div_pt3.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.2').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -643,9 +647,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.310000000
         pass</a>
 
     <div id='div_pt3.3' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.3').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -671,9 +675,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.30000000
         pass</a>
 
     <div id='div_pt3.4' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.4').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -699,9 +703,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.10000000
         pass</a>
 
     <div id='div_pt3.5' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.5').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -727,9 +731,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.270000000
         pass</a>
 
     <div id='div_pt3.6' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.6').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -755,9 +759,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.300000000
         pass</a>
 
     <div id='div_pt3.7' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.7').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -783,9 +787,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.310000000
         pass</a>
 
     <div id='div_pt3.8' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.8').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -814,9 +818,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.330000000
         fail</a>
 
     <div id='div_ft3.9' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.9').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -832,11 +836,16 @@ Traceback (most recent call last):
 AssertionError: failed:/weblib?query=wiki&amp;sort=tag-asc
   pattern missing: Kremlin de Moscou - Wikip\xe9dia
 --out-------------------------------------------------------------------
-HTTP/1.0 200 OK
-Content-type: text/html; charset=utf-8
-Cache-control: no-cache
-Set-Cookie: weblib_sort=tag-asc
-
+HTTP/1.0 200 OK
+
+Content-type: text/html; charset=utf-8
+
+Cache-control: no-cache
+
+Set-Cookie: weblib_sort=tag-asc
+
+
+
 &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/html4/loose.dtd"&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -1384,9 +1393,9 @@ function organizeSelected() {
         pass</a>
 
     <div id='div_pt3.10' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.10').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -1415,9 +1424,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.360000000
         pass</a>
 
     <div id='div_pt3.11' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.11').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -1443,9 +1452,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.290000000
         pass</a>
 
     <div id='div_pt3.12' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.12').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -1474,9 +1483,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.320000000
         pass</a>
 
     <div id='div_pt3.13' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.13').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -1505,9 +1514,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.400000000
         pass</a>
 
     <div id='div_pt3.14' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.14').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -1545,9 +1554,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.310000000
         pass</a>
 
     <div id='div_pt4.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt4.1').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -1573,9 +1582,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.100000000
         pass</a>
 
     <div id='div_pt4.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt4.2').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -1601,9 +1610,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.40000000
         pass</a>
 
     <div id='div_pt4.3' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt4.3').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -1632,9 +1641,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.90000000
         pass</a>
 
     <div id='div_pt4.4' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt4.4').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -1663,9 +1672,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.100000000
         pass</a>
 
     <div id='div_pt4.5' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt4.5').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -1691,15 +1700,16 @@ DEBUG:app:CGI script: /weblib completed duration: 0.120000000
         pass</a>
 
     <div id='div_pt4.6' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt4.6').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
 pt4.6: INFO:wlib.store:Loading weblib from: testdata/weblib\weblib.dat
 DEBUG:app:Run CGI script: /weblib path: /weblib/_?description=description%3A%E2%82%AC%21%22%23%24%25%26%27%28%29%2A%2B%2C-.+%2F0123456789%3A+%3B%3C%3D%3E%3F%40%5B%5C%5D%5E_%60%7B%7C%7D%7E%0D%0A%5BFor+testing%5D&amp;tags=%E2%82%AC%21%22%24%25+%26%27%28%29%2A-.%2F%3B+%3D%3F%5B%5C%5D%5E+_%60%7B%7C%7D%7E&amp;url=url%3A%E2%82%AC%21%22%23%24%25%26%27%28%29%2A%2B%2C-.+%2F0123456789%3A+%3B%3C%3D%3E%3F%40%5B%5C%5D%5E_%60%7B%7C%7D%7E&amp;title=%E2%82%AC%21%22%23%24%25%26%27%28%29%2A%2B%2C-.+%2F0123456789%3A+%3B%3C%3D%3E%3F%40%5B%5C%5D%5E_%60%7B%7C%7D%7E&amp;method=PUT&amp;create_tags=1
-DEBUG:cgi.weblib:method PUT rid=-1 tid=None path=/_ param (description=description:€!"#$%&amp;'()*+,-. /0123456789: ;&lt;=&gt;?@[\]^_`{|}~
+DEBUG:cgi.weblib:method PUT rid=-1 tid=None path=/_ param (description=description:€!"#$%&amp;'()*+,-. /0123456789: ;&lt;=&gt;?@[\]^_`{|}~
+
 [For testing],title=€!"#$%&amp;'()*+,-. /0123456789: ;&lt;=&gt;?@[\]^_`{|}~,url=url:€!"#$%&amp;'()*+,-. /0123456789: ;&lt;=&gt;?@[\]^_`{|}~,tags=€!"$% &amp;'()*-./; =?[\]^ _`{|}~,method=PUT,create_tags=1)
 DEBUG:weblib:Added tag: €!"$% &amp;'()*-./; =?[\]^ _`{|}~
 INFO:cgi.wlibFm:Adding WebPage: €!"#$%&amp;'()*+,-. /0123456789: ;&lt;=&gt;?@[\]^_`{|}~
@@ -1724,9 +1734,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.120000000
         pass</a>
 
     <div id='div_pt4.7' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt4.7').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -1759,9 +1769,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.40000000
         pass</a>
 
     <div id='div_pt4.8' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt4.8').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -1790,9 +1800,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.100000000
         pass</a>
 
     <div id='div_pt4.9' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt4.9').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -1818,9 +1828,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.100000000
         pass</a>
 
     <div id='div_pt4.10' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt4.10').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -1860,9 +1870,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.130000000
         pass</a>
 
     <div id='div_pt5.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.1').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -1887,9 +1897,9 @@ DEBUG:app:CGI script: /weblib/multiform completed duration: 0.80000000
         pass</a>
 
     <div id='div_pt5.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.2').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -1926,9 +1936,9 @@ DEBUG:app:CGI script: /weblib/multiform completed duration: 0.120000000
         pass</a>
 
     <div id='div_pt5.3' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.3').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -1966,9 +1976,9 @@ DEBUG:app:CGI script: /weblib/multiform completed duration: 0.100000000
         pass</a>
 
     <div id='div_pt5.4' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.4').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -1995,9 +2005,9 @@ DEBUG:app:CGI script: /weblib/multiform completed duration: 0.90000000
         pass</a>
 
     <div id='div_pt5.5' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.5').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2022,9 +2032,9 @@ DEBUG:app:CGI script: /weblib/multiform completed duration: 0.100000000
         pass</a>
 
     <div id='div_pt5.6' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.6').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2070,9 +2080,9 @@ DEBUG:app:CGI script: /weblib/multiform completed duration: 0.110000000
         pass</a>
 
     <div id='div_pt6.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt6.1').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2097,9 +2107,9 @@ DEBUG:app:CGI script: /weblib/tag_categorize completed duration: 0.100000000
         pass</a>
 
     <div id='div_pt6.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt6.2').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2126,9 +2136,9 @@ DEBUG:app:CGI script: /weblib/tag_categorize completed duration: 0.20000000
         pass</a>
 
     <div id='div_pt6.3' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt6.3').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2153,9 +2163,9 @@ DEBUG:app:CGI script: /weblib/tag_categorize completed duration: 0.20000000
         pass</a>
 
     <div id='div_pt6.4' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt6.4').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2183,9 +2193,9 @@ DEBUG:app:CGI script: /weblib/tag_categorize completed duration: 0.30000000
         pass</a>
 
     <div id='div_pt6.5' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt6.5').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2219,9 +2229,9 @@ DEBUG:app:CGI script: /weblib/tag_categorize completed duration: 0.100000000
         pass</a>
 
     <div id='div_pt7.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.1').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2247,9 +2257,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.60000000
         pass</a>
 
     <div id='div_pt7.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.2').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2275,9 +2285,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.20000000
         pass</a>
 
     <div id='div_pt7.3' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.3').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2303,9 +2313,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.30000000
         pass</a>
 
     <div id='div_pt7.4' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.4').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2340,9 +2350,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.30000000
         pass</a>
 
     <div id='div_pt7.5' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.5').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2374,9 +2384,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.60000000
         pass</a>
 
     <div id='div_pt7.6' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.6').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2404,9 +2414,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.60000000
         pass</a>
 
     <div id='div_pt7.7' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.7').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2433,9 +2443,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.30000000
         pass</a>
 
     <div id='div_pt7.8' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.8').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2462,9 +2472,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.40000000
         pass</a>
 
     <div id='div_pt7.9' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.9').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2563,9 +2573,9 @@ DEBUG:app:CGI script: /weblib completed duration: 0.60000000
         pass</a>
 
     <div id='div_pt9.5' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt9.5').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2710,9 +2720,9 @@ alert("You should see\n1. new line separate by \\n.\r\n2. new line separate by \
         pass</a>
 
     <div id='div_pt14.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt14.1').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2736,9 +2746,9 @@ INFO:cfg:Load test config. Data path: testdata
         pass</a>
 
     <div id='div_pt14.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt14.2').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2762,9 +2772,9 @@ INFO:cfg:Load test config. Data path: testdata
         pass</a>
 
     <div id='div_pt14.3' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt14.3').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2788,9 +2798,9 @@ INFO:cfg:Load test config. Data path: testdata
         pass</a>
 
     <div id='div_pt14.4' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt14.4').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2814,9 +2824,9 @@ INFO:cfg:Load test config. Data path: testdata
         pass</a>
 
     <div id='div_pt14.5' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt14.5').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2840,9 +2850,9 @@ INFO:cfg:Load test config. Data path: testdata
         pass</a>
 
     <div id='div_pt14.6' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt14.6').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2866,9 +2876,9 @@ INFO:cfg:Load test config. Data path: testdata
         pass</a>
 
     <div id='div_pt14.7' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt14.7').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2892,9 +2902,9 @@ INFO:cfg:Load test config. Data path: testdata
         pass</a>
 
     <div id='div_pt14.8' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt14.8').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2920,9 +2930,9 @@ INFO:cfg:Saving config file: testdata\config.ini 2011-03-28
         pass</a>
 
     <div id='div_pt14.9' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt14.9').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -2946,9 +2956,9 @@ INFO:cfg:Load test config. Data path: testdata
         pass</a>
 
     <div id='div_pt14.10' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt14.10').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -3065,9 +3075,9 @@ INFO:cfg:Load test config. Data path: testdata
         fail</a>
 
     <div id='div_ft16.8' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_ft16.8').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -3093,9 +3103,9 @@ AssertionError: -1 != 5
         fail</a>
 
     <div id='div_ft16.9' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_ft16.9').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -3121,9 +3131,9 @@ AssertionError: todo
         fail</a>
 
     <div id='div_ft16.10' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_ft16.10').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -3260,9 +3270,9 @@ AssertionError: todo
         error</a>
 
     <div id='div_ft20.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_ft20.1').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -3317,9 +3327,9 @@ AttributeError: 'ZipInfo' object has no attribute 'file_offset'
         error</a>
 
     <div id='div_ft21.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_ft21.1').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -3384,9 +3394,9 @@ AttributeError: 'ZipInfo' object has no attribute 'file_offset'
         error</a>
 
     <div id='div_ft22.3' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_ft22.3').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -3429,9 +3439,9 @@ BadZipfile: File is not a zip file
         pass</a>
 
     <div id='div_pt22.5' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt22.5').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -3556,9 +3566,9 @@ pt22.5: INFO:docarc:Initial archive id range is 0:0
         error</a>
 
     <div id='div_ft25.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_ft25.1').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -3590,9 +3600,9 @@ NameError: global name 'PyLucene' is not defined
         error</a>
 
     <div id='div_ft25.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_ft25.2').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -3624,9 +3634,9 @@ NameError: global name 'PyLucene' is not defined
         error</a>
 
     <div id='div_ft25.3' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_ft25.3').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -3665,9 +3675,9 @@ NameError: global name 'PyLucene' is not defined
         fail</a>
 
     <div id='div_ft26.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_ft26.1').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -3708,9 +3718,9 @@ AssertionError
         pass</a>
 
     <div id='div_pt26.5' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt26.5').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -3742,9 +3752,9 @@ pt26.5: WARNING:messagelog:message truncated - content-length: 100 bytes receive
         pass</a>
 
     <div id='div_pt27.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt27.1').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -3767,9 +3777,9 @@ pt27.1: DEBUG:messagelog:  0.00s      None, GET,404,txt  ,      7,___, R=??
         pass</a>
 
     <div id='div_pt27.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt27.2').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -3792,9 +3802,9 @@ pt27.2: DEBUG:messagelog:  0.00s 000000001, GET,200,txt  ,      7,___, R=??
         pass</a>
 
     <div id='div_pt27.3' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt27.3').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -3817,9 +3827,9 @@ pt27.3: DEBUG:messagelog:  0.00s 000000001, GET,404,txt  ,      7,___, R=??
         pass</a>
 
     <div id='div_pt27.4' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt27.4').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -3842,9 +3852,9 @@ pt27.4: DEBUG:messagelog:  0.00s 000000001, GET,200,txt  ,      7,___, R=??
         pass</a>
 
     <div id='div_pt27.5' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt27.5').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -3881,9 +3891,9 @@ pt27.5: INFO:messagelog:Initials currentId is 1
         pass</a>
 
     <div id='div_pt28.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt28.1').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -3908,9 +3918,9 @@ DEBUG:messagelog:  0.00s      None, GET,404,html ,    121,___,http://lists.netsy
         pass</a>
 
     <div id='div_pt28.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt28.2').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -3953,9 +3963,9 @@ DEBUG:messagelog:  0.00s      None, GET,0  ,     ,      0,,http://creativecommon
         pass</a>
 
     <div id='div_pt28.3' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt28.3').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -3979,9 +3989,9 @@ DEBUG:messagelog:  0.00s      None, GET,200,html ,  12158,___,http://creativecom
         pass</a>
 
     <div id='div_pt28.4' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt28.4').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -4005,9 +4015,9 @@ DEBUG:messagelog:  0.00s 000000001, GET,200,html ,  12158,___,http://creativecom
         pass</a>
 
     <div id='div_pt28.5' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt28.5').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -4040,9 +4050,9 @@ DEBUG:messagelog:  0.00s 000000001, GET,200,html ,  12158,___,http://creativecom
         pass</a>
 
     <div id='div_pt29.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt29.1').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -4076,9 +4086,9 @@ DEBUG:upgrade:Upgrade available. current version 0.4.0 last_entry_date 2006-01-1
         pass</a>
 
     <div id='div_pt29.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt29.2').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -4113,9 +4123,9 @@ INFO:cfg:Saving config file: testdata\config.ini 2011-03-28
         pass</a>
 
     <div id='div_pt29.4' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt29.4').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -4168,9 +4178,9 @@ DEBUG:upgrade:Feed ignored. Old date: 2006-01-18T17:00:00Z
         pass</a>
 
     <div id='div_pt29.5' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt29.5').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -4226,9 +4236,9 @@ pt29.5: INFO:cfg:Saving config file: testdata\config.ini 2011-03-28
         pass</a>
 
     <div id='div_pt31.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt31.2').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -4272,9 +4282,9 @@ Block9 clen=52 len(data)=52 [[Message 9 has  \n2 lines and ends without line bre
         pass</a>
 
     <div id='div_pt31.3' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt31.3').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -4443,15 +4453,17 @@ pt31.3:
         pass</a>
 
     <div id='div_pt36.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt36.1').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
-pt36.1: line 0: [line1
+pt36.1: line 0: [line1
+
 ]
-line 1: [line2
+line 1: [line2
+
 ]
 line 2: [line3
 ]
@@ -4809,9 +4821,9 @@ line 2: [line3
         pass</a>
 
     <div id='div_pt45.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt45.1').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -4839,9 +4851,9 @@ nAlive 3
         pass</a>
 
     <div id='div_pt45.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt45.2').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -4977,9 +4989,9 @@ Exception: bad
         pass</a>
 
     <div id='div_pt48.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt48.2').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -5026,9 +5038,9 @@ INFO:wlib.imprt:Import completed items added=19 updated=0
         pass</a>
 
     <div id='div_pt48.3' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt48.3').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -5051,9 +5063,9 @@ pt48.3: WARNING:imp.del.i.:Error parsing delicious import: lib/testdocs\test_mag
         pass</a>
 
     <div id='div_pt48.4' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt48.4').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -5088,9 +5100,9 @@ INFO:wlib.imprt:Import completed items added=4 updated=0
         pass</a>
 
     <div id='div_pt48.6' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt48.6').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -5121,9 +5133,9 @@ INFO:wlib.imprt:Import completed items added=4 updated=0
         pass</a>
 
     <div id='div_pt48.7' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt48.7').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -5170,9 +5182,9 @@ INFO:wlib.imprt:Import completed items added=19 updated=0
         pass</a>
 
     <div id='div_pt48.8' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt48.8').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -5195,9 +5207,9 @@ pt48.8: INFO:wlib.imprt:Import completed items added=0 updated=0
         pass</a>
 
     <div id='div_pt48.9' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt48.9').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -5240,9 +5252,9 @@ INFO:wlib.imprt:Import completed items added=14 updated=0
         pass</a>
 
     <div id='div_pt48.10' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt48.10').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -5291,9 +5303,9 @@ INFO:wlib.imprt:Import completed items added=19 updated=0
         pass</a>
 
     <div id='div_pt48.11' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt48.11').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -5342,9 +5354,9 @@ INFO:wlib.imprt:Import completed items added=19 updated=0
         pass</a>
 
     <div id='div_pt48.12' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt48.12').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -5450,9 +5462,9 @@ INFO:wlib.imprt:Import completed items added=0 updated=0
         pass</a>
 
     <div id='div_pt51.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt51.2').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -5475,9 +5487,9 @@ pt51.2: INFO:wlib.store:Loading weblib from: testdata/weblib\weblib.dat
         pass</a>
 
     <div id='div_pt51.3' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt51.3').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -5509,9 +5521,9 @@ ValueError: Trailing \ in string
         pass</a>
 
     <div id='div_pt51.4' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt51.4').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -5557,9 +5569,9 @@ INFO:wlib.store:Upgrade weblib file existing verion= new version=0.8
         pass</a>
 
     <div id='div_pt51.9' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt51.9').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -5599,9 +5611,9 @@ INFO:wlib.store:Loading weblib from: testdata/weblib\weblib.dat
         pass</a>
 
     <div id='div_pt51.13' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt51.13').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -5626,9 +5638,9 @@ INFO:wlib.store:Upgrade weblib file existing verion=0.01 new version=0.8
         pass</a>
 
     <div id='div_pt51.14' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt51.14').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -5798,9 +5810,9 @@ pt51.14: WARNING:wlib.store:Ignore unknown id: "a_name"
         fail</a>
 
     <div id='div_ft54.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_ft54.1').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -5873,9 +5885,9 @@ AssertionError
         pass</a>
 
     <div id='div_pt57.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt57.1').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -5908,9 +5920,9 @@ pt57.1: DEBUG:weblib:Add tag from category: Buckingham
         pass</a>
 
     <div id='div_pt57.4' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt57.4').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -5937,9 +5949,9 @@ DEBUG:weblib:Added tag: T5
         pass</a>
 
     <div id='div_pt57.5' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt57.5').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -5968,9 +5980,9 @@ DEBUG:weblib:Added tag: b
         pass</a>
 
     <div id='div_pt57.7' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt57.7').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -5999,9 +6011,9 @@ DEBUG:weblib:Added tag: b
         pass</a>
 
     <div id='div_pt57.9' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt57.9').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
@@ -6029,9 +6041,9 @@ DEBUG:weblib:tag_merge_del completed. Webpages updated=4 #tag=3
         pass</a>
 
     <div id='div_pt57.10' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
+        <div style='text-align: right;cursor:pointer;font-size: large;font-weight: bold;'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt57.10').style.display = 'none' " >
-           [x]</a>
+           ×</a>
         </div>
         <pre>
 
